@@ -2160,13 +2160,6 @@ a.btn-classic {
 	margin-bottom: 10px;
 }
 
-
-
-@media screen and (max-width: 767px) {
-
-
-}
-
 .footer-blocks{
 	display: flex;
 	flex-direction: row;
