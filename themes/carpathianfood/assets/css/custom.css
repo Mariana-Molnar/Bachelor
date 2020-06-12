@@ -1,0 +1,11 @@
+@import "mup-plugin.css";
+@import "main-style.css";
+
+body {
+    margin: 0;
+}
+
+.error-404 .faq-block,
+.error-404 .logos-block {
+    background: transparent;
+}

@@ -1,0 +1,49 @@
+.calculator-block .raiting-icons-block ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.calculator-block .raiting-icons-block .raiting-icon {
+    display: block;
+    width: 12px;
+    height: 30px;
+    background: url("../images/mensch-grau.png");
+    background-size: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.calculator-block .raiting-icons-block .raiting-icon.selected {
+    background-image: url("../images/mensch-gruen.png");
+}
+
+.calculator-block .plz-input-block {
+    position: relative;
+}
+
+.calculator-block .form-error {
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    color: #e8d146;
+    display: none;
+}
+
+
+.slider.slider-horizontal .slider-track {
+    background: #c6c6c6;
+}
+
+.slider.slider-horizontal .slider-selection {
+    background: rgb(147, 189, 58);
+}
+
+.slider.slider-horizontal .slider-handle {
+    height: 30px;
+    top: -5px;
+    background: rgb(147, 189, 58);
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}

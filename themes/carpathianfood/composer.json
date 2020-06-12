@@ -1,0 +1,18 @@
+{
+    "name": "rebel/top100website",
+    "description": "Alternative Expert Website",
+    "require": {
+
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : ""
+        }
+    },
+    "require-dev": {
+        "kint-php/kint": "^2.2"
+    }
+}

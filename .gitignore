@@ -1,0 +1,7 @@
+.idea
+*.log
+/*
+!.gitignore
+!themes/
+themes/*
+!themes/carpathianfood/

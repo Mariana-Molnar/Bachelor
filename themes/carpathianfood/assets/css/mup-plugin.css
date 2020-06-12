@@ -1,0 +1,362 @@
+.card{
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.card-body{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.bs-stepper .step-trigger{
+    background: unset;
+    min-width: unset;
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.bs-stepper-header {
+    justify-content: space-around;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.bs-stepper .line,
+.bs-stepper-line {
+    display: none;
+}
+
+.step {
+    position: relative;
+}
+
+.step:before {
+    content: " ";
+    display: block;
+    border-top: 2px solid #c6c6c6;
+    position: absolute;
+    top: 36px;
+    left: -75px;
+    width: 10000px;
+}
+
+.step.passed:before,
+.step.active:before {
+    content: " ";
+    display: block;
+    border-top: 2px solid #93bd3a;
+    position: absolute;
+    top: 36px;
+    left: -75px;
+    width: 10000px;
+}
+
+.bs-stepper-label{
+    order: 1;
+    font-family: OpenSans-ExtraBold;
+    font-size: 9px;
+}
+
+.bs-stepper-circle{
+    background-color: #fff;
+    background-size: contain;
+    z-index: 1;
+    color: transparent;
+    border: #c6c6c6 solid 2px;
+    width: 1.5em;
+    height: 1.5em;
+    order: 2;
+}
+
+.passed .bs-stepper-circle{
+    background: url('../images/haken.png')  no-repeat #eee;
+    background-size: contain;
+    border: none;
+}
+
+.active .bs-stepper-circle{
+    background-color: #fff;
+    border: #93bd3a solid 2px;
+}
+
+.bs-stepper .step-trigger:not(:disabled):not(.disabled) {
+    cursor: unset;
+}
+
+.bs-stepper .step-trigger.disabled,
+.bs-stepper .step-trigger:disabled{
+    opacity: 1;
+}
+
+.bs-stepper .step-trigger:hover {
+    text-decoration: none;
+    background-color: unset;
+}
+
+.bs-stepper .step-trigger:focus {
+    color: #464646;
+    outline: 0;
+}
+
+.bs-stepper-content .form-group{
+    position: relative;
+}
+
+.bs-stepper-content .form-group label.form-group-label
+ {
+    width: 167px;
+    color: #767676;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Roboto-Regular;
+    margin-right: 20px;
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-weight: normal;
+}
+
+.bs-stepper-content select,
+.bs-stepper-content .form-group .form-control
+{
+    border: none !important;
+    width: 75%;
+}
+
+.bs-stepper-content input[type="text"],
+.bs-stepper-content .form-control{
+    color: #777;
+    font-size: 10px;
+    font-family: Roboto-Regular;
+    height: calc(2.25em + .75rem + 2px);
+    margin-left: 175px;
+}
+
+.form-check-label{
+    font-family: Roboto-Regular;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #777;
+}
+
+.bs-stepper-content input[type="text"],
+.bs-stepper-content input[type="email"],
+.bs-stepper-content input[type="url"],
+.bs-stepper-content input[type="password"],
+.bs-stepper-content input[type="search"],
+.bs-stepper-content input[type="number"],
+.bs-stepper-content input[type="tel"],
+.bs-stepper-content input[type="range"],
+.bs-stepper-content input[type="date"],
+.bs-stepper-content input[type="month"],
+.bs-stepper-content input[type="week"],
+.bs-stepper-content input[type="time"],
+.bs-stepper-content input[type="datetime"],
+.bs-stepper-content input[type="datetime-local"],
+.bs-stepper-content textarea{
+    border: none;
+    color: #777;
+    font-size: 10px;
+    font-family: Roboto-Regular;
+}
+
+.bs-stepper-content input[type="email"]{
+    text-transform: none;
+}
+
+
+.bs-stepper-content .form-check,
+.bs-stepper-content .switch-wrap {
+    margin-left: 175px;
+}
+
+.bs-stepper-content .form-check label{
+    position:relative;
+    text-align: left;
+    transform: none;
+}
+
+.bs-stepper-content .form-control.is-invalid~.invalid-feedback {
+    margin-left: 175px;
+}
+
+/*input[type="date"]::-webkit-inner-spin-button,*/
+/*input[type="date"]::-webkit-calendar-picker-indicator {*/
+/*    display: none;*/
+/*    -webkit-appearance: none;*/
+/*}*/
+
+.bs-stepper-content  input[type="date"] {
+    position: relative;
+    padding: 10px;
+}
+
+.bs-stepper-content  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+    margin-left: 18px;
+}
+
+.bs-stepper-content  input[type="date"]:before {
+    color: transparent;
+    background: none;
+    display: block;
+    font-family: 'icons';
+    content: '\e804';
+    position: absolute;
+    top: -2px;
+    right: 12px;
+    font-size: 30px;
+    color: #e8d146;
+    cursor: pointer;
+}
+
+
+.bs-stepper-content select {
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../images/down-icon.svg') 96% / 15% no-repeat #fff;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+/*.form-group:before{*/
+/*    font-family: "icons";*/
+/*    content: '\e925';*/
+/*    font-size: 22px;*/
+/*    color: yellow;*/
+/*    right: -5px;*/
+/*    position: absolute;*/
+/*}*/
+
+/* CAUTION: IE hackery ahead */
+.bs-stepper-content input[type='date']::-ms-expand,
+.bs-stepper-content select::-ms-expand {
+    display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    .bs-stepper-content input[type='date'],
+    .bs-stepper-content select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+
+
+.bs-stepper-content .card-title i,
+.bs-stepper-content .form-group i{
+    vertical-align: super;
+    margin-left: 3px;
+}
+
+.bs-stepper-content label{
+    margin-bottom: 0;
+}
+
+.mup-page-content > button{
+    margin-right: 0;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #c6c6c6;
+    border-color: unset !important;
+}
+
+.mup-page-content > button.next{
+    float: right;
+}
+
+.mup-page-content > button:focus {
+    box-shadow: none;
+}
+
+.mup-page-content > button:hover {
+    background-color: #93bd3a;
+}
+
+.toggle-group{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+}
+
+.toggle.btn,
+.toggle-group .toggle-on{
+    background-color: #93bd3a;
+    border-color: #93bd3a;
+}
+
+.toggle-on:not(:disabled):not(.disabled):active{
+    background-color: #547819;
+    border-color: #547819;
+}
+
+.toggle-handle{
+    background-color: #547819;
+    border-color: #547819;
+}
+
+fieldset.section-fieldset {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-family: Roboto-Regular;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.summary-field-title{
+    font-family: Roboto-Bold;
+    text-transform: uppercase;
+}
+
+fieldset {
+    margin-top: 1em !important;
+    padding: 0.55em 1.5em 1.5em !important;
+}
+
+legend {
+    display: contents !important;
+}
+
+@media screen and (max-width: 991px){
+    .bs-stepper-content .form-group label.form-group-label {
+        position: relative;
+        text-align:left;
+        margin-bottom: 5px;
+    }
+
+    .bs-stepper-content .form-check,
+    .bs-stepper-content .switch-wrap {
+        margin-left: 10px;
+    }
+
+    .bs-stepper-content .form-check,
+    .bs-stepper-content .form-control.is-invalid~.invalid-feedback,
+    .bs-stepper-content input[type="text"],
+    .bs-stepper-content .form-control{
+         margin-left: 0;
+    }
+
+    .bs-stepper-content input[type="text"],
+    .bs-stepper-content .form-group .form-control {
+         width: 100%;
+    }
+
+    .bs-stepper-content .wp-block-timon-input {
+        padding: 10px 0;
+    }
+
+    .mup-page-content > button.next,
+    .mup-page-content > button.prev
+    {
+        float: none;
+    }
+
+}
