@@ -15,7 +15,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container site-info">
             <div class="footer-blocks">
-                <div class="site-branding footer-logo">
+                <div class=" footer-logo">
                     <?php the_custom_logo(); ?>
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
                 </div><!-- .site-branding -->

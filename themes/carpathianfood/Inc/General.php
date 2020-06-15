@@ -124,6 +124,7 @@ class General
         wp_register_style(TEXTDOMAIN . '-font-css', ASSETSURL . '/font/font-style.css', '', ASSETS_VERSION);
         wp_register_style(TEXTDOMAIN . '-fontello-css', ASSETSURL . '/fontello/css/icons.css', '', ASSETS_VERSION);
         wp_register_style(TEXTDOMAIN . '-slick-css', ASSETSURL . '/slick/slick.css', '', ASSETS_VERSION);
+		wp_register_style(TEXTDOMAIN . '-icon-css', ASSETSURL . '/fontello/css/icons.css', '', ASSETS_VERSION);
         wp_register_style(TEXTDOMAIN . '-datetimepicker-css', ASSETSURL . '/datetimepicker/css/jquery.datetimepicker.min.css', '', ASSETS_VERSION);
 	}
 
@@ -154,6 +155,7 @@ class General
         wp_enqueue_style(TEXTDOMAIN . '-font-css');
         wp_enqueue_style(TEXTDOMAIN . '-fontello-css');
         wp_enqueue_style(TEXTDOMAIN . '-slick-css');
+		wp_enqueue_style(TEXTDOMAIN . '-icon-css');
         wp_enqueue_style(TEXTDOMAIN . '-datetimepicker-css');
 
 

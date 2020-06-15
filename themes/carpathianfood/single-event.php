@@ -35,12 +35,34 @@ $id = get_the_ID();
         </div>
     </section>
 
-<section class="container event-main-body">
-    <h1 class="event-main-title"><?php the_title()?></h1>
-    <div class="row event-main-description">
-        
-    </div>
-</section>
+        <section class="container event-main-body">
+            <h1 class="event-main-title"><?php the_title() ?></h1>
+        </section>
+
+        <section class="container">
+            <?php echo get_the_content(); ?>
+        </section>
+
+<!--    <section>-->
+<!--        <div class="event-single-details">-->
+<!--            <h3>--><?php //echo get_field('detail_title', $id)?><!--</h3>-->
+<!--            <div class="row">-->
+<!--            --><?php //if (have_rows('detail_info', $id)) : ?>
+<!--                --><?php //while (have_rows('detail_info', $id)) :?>
+<!--                    <div class="col-md-6">-->
+<!--                        <div>-->
+<!--                            <img src="--><?php //echo get_sub_field('icon',$id)?><!--" alt="">-->
+<!--                        </div>-->
+<!--                        <div>-->
+<!--                            <p>--><?php //echo get_sub_field('title',$id)?><!--</p>-->
+<!--                            <p>--><?php //echo get_sub_field('description',$id)?><!--</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                --><?php //endwhile; ?>
+<!--            --><?php //endif;?>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
 <?php
     

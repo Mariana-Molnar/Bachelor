@@ -1029,7 +1029,7 @@ input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-	background: #767676;
+	background: var(--green-light);
 }
 
 button:focus {
@@ -1942,7 +1942,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 13.2 Front Page
 --------------------------------------------------------------*/
 
-a.btn-classic {
+a.btn-classic,
+input.btn-classic{
 	background-color: transparent;
 	border: 2px solid var(--green-dark);
 	border-radius: 0;
@@ -2139,6 +2140,14 @@ a.btn-classic {
 		font-size: 30px;
 	}
 }
+@media screen and (max-width: 768px){
+
+	.slogan-title:before {
+		left: 0;
+		right: 0;
+	}
+}
+
 
 .header-main-wrap{
 	background-image: url("../images/main-background.png");
@@ -2170,6 +2179,161 @@ a.btn-classic {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+
+/*about us page*/
+.contact-main-block{
+	padding-top: 30px;
+}
+
+.contact-info-block{
+	/*background-color: #f8f8f8;*/
+	padding: 40px 30px 30px 40px;
+	margin: 30px 20px 0 0;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.contact-info-block h2{
+	font-size: 20px;
+	font-family: OpenSans-Bold;
+	padding-top: 5px;
+}
+
+.meet-block p,
+.message-type .wpcf7-list-item-label{
+	font-family: OpenSans-Regular;
+	font-size: 16px;
+}
+
+.message-type .wpcf7-list-item-label{
+	cursor: pointer;
+}
+
+.contact-wrap-block {
+	position: relative;
+}
+
+.contact-background{
+	position: absolute;
+	background-color: #f8f8f8;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media screen and (max-width: 500px){
+	.contact-background{
+		right:-25px;
+		left: -25px;
+	}
+}
+
+@media screen and (max-width: 1020px){
+	.contact-info-block{
+		padding: 20px 10px 10px 20px;
+		margin: 0;
+	}
+
+	.contact-wrap-block {
+		margin-bottom: 20px;
+	}
+}
+
+.contact-info-item,
+.contact-main-block h2{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.contact-info-description{
+	font-size: 11px;
+	line-height: 20px;
+}
+
+.contact-info-item p {
+	margin: 0;
+}
+.contact-info-item i {
+	margin-right: 25px;
+}
+
+[class^="icon-"]:before {
+	font-size: 30px !important;
+}
+
+.mail-block{
+	margin: 30px 20px 0 0;
+}
+
+.accept-condition span.wpcf7-list-item{
+	display: flex;
+	align-items: center;
+}
+
+.accept-condition .wpcf7-list-item-label{
+	display: block;
+	margin-left: 1.0rem;
+	font-size: 11px;
+	line-height: 20px;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: none;
+	color: #398f14;
+}
+
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+	border: none;
+	color: #f7e700;
+}
+
+/*Custom checkbox*/
+
+.accept-condition label{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+	.accept-condition span.wpcf7-list-item{
+		align-items: flex-start;
+	}
+
+	.mail-block input[type='checkbox'] {
+		margin-top: 6px;
+	}
+
+	.accept-condition label{
+		align-items: flex-start;
+	}
+}
+/*End custom checkbox*/
+
+.mail-block button{
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contact-footer{
+	position: relative;
+}
+
+#map {
+	height: 520px;
+	width: 100%;
+}
+
+textarea {
+	resize: none;!important;
 }
 
 /*--------------------------------------------------------------
