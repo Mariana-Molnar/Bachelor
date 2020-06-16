@@ -66,7 +66,7 @@ if (have_posts()): the_post();
 		<div class="offer-block-title">
 			<h3><?php echo __('Recent Events', 'cfood') ?></h3>
 		</div>
-		<div class="row justify-content-between">
+		<div class="row justify-content-between align-items-baseline">
 			<?php foreach ($events as $event):
 				$link = get_permalink($event->id); ?>
 				<?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($event->id), 'project-main'); ?>

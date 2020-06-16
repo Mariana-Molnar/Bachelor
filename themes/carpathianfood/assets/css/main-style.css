@@ -1943,7 +1943,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 --------------------------------------------------------------*/
 
 a.btn-classic,
-input.btn-classic{
+input.btn-classic,
+button.btn-classic{
 	background-color: transparent;
 	border: 2px solid var(--green-dark);
 	border-radius: 0;
@@ -1953,6 +1954,18 @@ input.btn-classic{
 	font-family: OpenSans-Bold;
 	padding: 5px;
 	color: var(--green-dark);
+}
+
+.button-call-fill {
+	display: flex;
+	align-items: center;
+	padding-left:15px !important;
+	margin: 20px;
+}
+
+.current-menu-item a{
+	color: var(--green-dark);
+	font-family: OpenSans-Semibold;
 }
 
 .hero-image-section{
@@ -2461,11 +2474,17 @@ textarea {
 
 .event-item-title-block h2{
 	margin-bottom: 5px;
+	text-align: center;
+}
+
+.event-item-title h2 {
+	text-align: center;
 }
 
 .event-hero-image {
 	height: 60vh;
 	background-position: center center;
+	max-height: 500px;
 }
 
 .filter-block{
