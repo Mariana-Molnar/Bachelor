@@ -220,6 +220,25 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5eea5bc3d0a86",
+            "label": "Share title",
+            "name": "share_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -239,5 +258,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1592253278
+    "modified": 1592417235
 }

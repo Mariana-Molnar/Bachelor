@@ -20,8 +20,8 @@
                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
                 </div><!-- .site-branding -->
 
-                <div>
-                    <p>Ми у соцмережах:</p>
+                <div class="social-share">
+                    <p> <?php echo get_field('share_title', 'option')?></p>
                     <?php echo do_shortcode('[addtoany]')?>
                 </div>
 

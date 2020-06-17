@@ -64,7 +64,7 @@ if (have_posts()): the_post();
 
 	<section class="container mb-4 recent-event-block">
 		<div class="offer-block-title">
-			<h3><?php echo __('Recent Events', 'cfood') ?></h3>
+			<h3><?php echo __('Актуальні події', 'cfood') ?></h3>
 		</div>
 		<div class="row justify-content-between align-items-baseline">
 			<?php foreach ($events as $event):

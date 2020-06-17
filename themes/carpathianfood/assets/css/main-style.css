@@ -1357,6 +1357,8 @@ a:hover .nav-title,
 	text-transform: uppercase;
 }
 
+
+.footer-logo a,
 .site-branding a{
 	color: var(--green-dark);
 	font-family: OpenSans-Bold;
@@ -2161,6 +2163,70 @@ button.btn-classic{
 	}
 }
 
+.event-detail-block {
+	position: relative;
+	padding: 20px;
+}
+
+.event-detail-block:before {
+	content: "";
+	position: absolute;
+	background-color: var(--green-light);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.event-single-details h2{
+	text-align: center;
+	font-family: OpenSans-Bold;
+	text-transform: uppercase;
+	color: var(--green-dark);
+	font-size: 20px;
+}
+
+.event-detail-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.event-detail-col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.detail-icon {
+	background-color: #fff;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	margin-right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.detail-icon img{
+	width: 65%;
+}
+
+.detail-title {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: OpenSans-Bold;
+	color: var(--green-dark);
+	margin-bottom: 5px;
+}
+
+.detail-description{
+	font-size: 14px;
+	font-family: OpenSans-Light;
+	margin-bottom: 5px;
+}
 
 .header-main-wrap{
 	background-image: url("../images/main-background.png");
@@ -2182,6 +2248,17 @@ button.btn-classic{
 	margin-bottom: 10px;
 }
 
+.social-share {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-share p{
+	font-family: OpenSans-SemiboldItalic;
+}
+
 .footer-blocks{
 	display: flex;
 	flex-direction: row;
@@ -2192,6 +2269,7 @@ button.btn-classic{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 
@@ -4795,7 +4873,7 @@ p > object:only-child {
 	}
 
 	.custom-logo-link {
-		padding-right: 2em;
+		padding-right: 0;
 	}
 
 	.custom-logo-link img,

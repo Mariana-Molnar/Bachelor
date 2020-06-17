@@ -10,9 +10,9 @@ use Service\Helpers;
 $filters = PlaceRepository::getAllTerms(Place::$MACHINE_NAME . '-type', '');
 get_header(); ?>
 
-<?php $mainPost =  get_field('main_event', 'option'); ?>
+<?php $mainPost =  get_field('main_place', 'option'); ?>
 
-	<section class="hero-image-section event-hero-image" style="background-image: url('<?php echo get_the_post_thumbnail_url($mainPost)?>')">
+	<section class="hero-image-section event-hero-image" style="background-image: url('<?php the_field('main_place_image', 'option');?>')">
 		<div class="main-title">
 			<h1><?php echo get_the_title($mainPost)?></h1>
 		</div>

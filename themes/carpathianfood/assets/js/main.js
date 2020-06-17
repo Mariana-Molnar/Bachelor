@@ -4,7 +4,6 @@
 
         console.log('Script main.js init');
 
-
         $('.hamburger-menu').on('click', function(e) {
             e.preventDefault();
             $(this).toggleClass('hamburger-menu_active');
@@ -19,7 +18,6 @@
             // project_name
             const project_machine_name = $filters_wrap.data('project_name');
             let $filters = $('#project-filters-wrapper .project-filter-checkbox');
-            let $projects = $('#projects-wrapper .project-item-block');
             let $load_more_btn = $('#projects-load-more');
 
             $load_more_btn.click(function() {
@@ -29,7 +27,6 @@
 
             let show_classes = [];
             if ($filters.length) {
-
 
                 refresh_projects(show_classes, project_count);
 
