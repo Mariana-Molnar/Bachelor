@@ -6,13 +6,10 @@ use Inc\General;
 if (!defined('ABSPATH')) {
 	die('No direct script access allowed');
 }
-
 get_header();
-
 if (have_posts()):
 	while (have_posts()):
 		the_post();
-
 		$id = get_the_ID();
 		?>
 
@@ -45,16 +42,18 @@ if (have_posts()):
 				<h2><?php echo get_field('detail_title') ?></h2>
 				<div class="row event-detail-row">
 					<?php if (have_rows('detail_info')):
-						while (have_rows('detail_info')) : the_row();?>
-						<div class="col-md-4 event-detail-col">
-							<div class="detail-icon">
-								<img src="<?php the_sub_field('icon');?>" alt="">
+						while (have_rows('detail_info')) : the_row(); ?>
+							<div class="col-md-4 event-detail-col">
+								<div>
+									<div class="detail-icon">
+										<img src="<?php the_sub_field('icon'); ?>" alt="">
+									</div>
+								</div>
+								<div>
+									<p class="detail-title"><?php the_sub_field('title'); ?></p>
+									<p class="detail-description"><?php the_sub_field('description'); ?></p>
+								</div>
 							</div>
-							<div>
-								<p class="detail-title"><?php the_sub_field('title'); ?></p>
-								<p class="detail-description"><?php the_sub_field('description'); ?></p>
-							</div>
-						</div>
 						<?php endwhile;
 					endif; ?>
 				</div>
@@ -66,8 +65,6 @@ if (have_posts()):
 		</section>
 
 	<?php
-
 	endwhile;
 endif;
-
 get_footer();

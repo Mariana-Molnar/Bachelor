@@ -4,23 +4,18 @@
  */
 
 // Prevent direct script access.
-if ( ! defined( 'ABSPATH' ) ) {
-    die( 'No direct script access allowed' );
+if (!defined('ABSPATH')) {
+	die('No direct script access allowed');
 }
-
 get_header();
-
-
-if ( have_posts() ) :  the_post();
-
-?>
+if (have_posts()) : the_post(); ?>
 
 	<section class="contact-main-block">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-6">
 					<h1><?php echo __('Зв\'яжіться з нами! ', 'cfood') ?></h1>
-					<div  class="contact-wrap-block">
+					<div class="contact-wrap-block">
 						<div class="contact-background"></div>
 						<div class="contact-info-block">
 							<div class="row meet-block">
@@ -64,5 +59,4 @@ if ( have_posts() ) :  the_post();
 
 <?php
 endif; // End of the loop.
-
 get_footer();

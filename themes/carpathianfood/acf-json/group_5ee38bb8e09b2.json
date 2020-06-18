@@ -128,6 +128,13 @@
                 "operator": "==",
                 "value": "event"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "place"
+            }
         ]
     ],
     "menu_order": 0,
@@ -138,5 +145,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1591971658
+    "modified": 1592421843
 }

@@ -1946,7 +1946,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 a.btn-classic,
 input.btn-classic,
-button.btn-classic{
+button.btn-classic {
 	background-color: transparent;
 	border: 2px solid var(--green-dark);
 	border-radius: 0;
@@ -1961,25 +1961,25 @@ button.btn-classic{
 .button-call-fill {
 	display: flex;
 	align-items: center;
-	padding-left:15px !important;
+	padding-left: 15px !important;
 	margin: 20px;
 }
 
-.current-menu-item a{
+.current-menu-item a {
 	color: var(--green-dark);
 	font-family: OpenSans-Semibold;
 }
 
-.hero-image-section{
+.hero-image-section {
 	height: 80vh;
-	max-height: 800px;
+	max-height: 600px;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom left;
 }
 
-.main-title{
+.main-title {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.4);
 	color: #fff;
@@ -1994,20 +1994,20 @@ button.btn-classic{
 	justify-content: center;
 }
 
-.main-title h1{
+.main-title h1 {
 	font-family: OpenSans-Light;
 	font-size: 50px;
 	text-transform: uppercase;
 }
 
-.offer-block-title h3{
+.offer-block-title h3 {
 	padding-top: 20px;
 	font-size: 40px;
 	font-family: OpenSans-Light;
 }
 
 
-.offer-item-image-block{
+.offer-item-image-block {
 	margin-bottom: 15px;
 	border-radius: 50%;
 	position: relative;
@@ -2023,18 +2023,18 @@ button.btn-classic{
 .offer-item-image-block:before {
 	content: "";
 	float: left;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
+	padding-top: 100%; /* initial ratio of 1:1*/
 }
 
-.offer-item-image-block.green{
+.offer-item-image-block.green {
 	background-color: var(--green-light);
 }
 
-.offer-item-image-block.yellow{
+.offer-item-image-block.yellow {
 	background-color: var(--yellow-light);
 }
 
-.offer-item-image-block.gray{
+.offer-item-image-block.gray {
 	background-color: var(--gray-light);
 }
 
@@ -2045,11 +2045,11 @@ button.btn-classic{
 	padding: 15px 0;
 }
 
-.offer-item-block p{
+.offer-item-block p {
 	text-align: center;
 }
 
-.offer-item-block h4{
+.offer-item-block h4 {
 	text-transform: uppercase;
 	font-family: OpenSans-Bold;
 	padding: 5px;
@@ -2121,7 +2121,7 @@ button.btn-classic{
 	justify-content: center;
 }
 
-.slogan-title{
+.slogan-title {
 	border: 2px solid #fff;
 	position: relative;
 	color: #fff;
@@ -2155,7 +2155,8 @@ button.btn-classic{
 		font-size: 30px;
 	}
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
 
 	.slogan-title:before {
 		left: 0;
@@ -2178,7 +2179,7 @@ button.btn-classic{
 	bottom: 0;
 }
 
-.event-single-details h2{
+.event-single-details h2 {
 	text-align: center;
 	font-family: OpenSans-Bold;
 	text-transform: uppercase;
