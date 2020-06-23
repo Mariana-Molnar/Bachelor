@@ -12,11 +12,13 @@ get_header(); ?>
 
 <?php $mainPost = get_field('main_place', 'option'); ?>
 
+<a href="<?php echo get_permalink($mainPost)?>">
 	<section class="hero-image-section event-hero-image" style="background-image: url('<?php the_field('main_place_image', 'option'); ?>')">
 		<div class="main-title">
 			<h1><?php echo get_the_title($mainPost) ?></h1>
 		</div>
 	</section>
+</a>
 
 	<section class="mt-3 portfolio-main-block">
 		<div class="container filter-block mb-4 text-center">

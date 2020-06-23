@@ -3,34 +3,42 @@
  * The template for displaying all single posts
  */
 
-get_header(); ?>
+get_header(); if (have_posts()):
+	while (have_posts()):
+		the_post();
+		$id = get_the_ID();
+		?>
 
-	<div class="wrap">
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
-				<?php
-				// Start the Loop.
-				while (have_posts()) :
-					the_post();
+		<section class="container">
+			<div class="row event-hero-block">
+				<div class="col-3 col-md-3 cutlery-block">
+					<div class="fork-cutlery-block">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/fork.svg' ?>" alt="">
+					</div>
+				</div>
+				<div class="col-6 col-md-4 event-hero-img-block">
+					<div class="event-hero-wrap">
+						<div class="event-hero-img" style="background-image: url('<?php echo get_the_post_thumbnail_url($id) ?>')"></div>
+					</div>
+				</div>
+				<div class="col-3 col-md-3 cutlery-block">
+					<div class="knife-cutlery-block">
+						<img src="<?php echo get_template_directory_uri() . '/assets/images/knife.svg' ?>" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
 
-					get_template_part('template-parts/post/content', get_post_format());
+		<section class="container event-main-body">
+			<h1 class="event-main-title"><?php the_title() ?></h1>
+		</section>
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if (comments_open() || get_comments_number()) :
-						comments_template();
-					endif;
 
-					the_post_navigation([
-						'prev_text' => '<span class="screen-reader-text">' . __('Previous Post', 'twentyseventeen') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Previous', 'twentyseventeen') . '</span> <span class="nav-title"><span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg(['icon' => 'arrow-left']) . '</span>%title</span>',
-						'next_text' => '<span class="screen-reader-text">' . __('Next Post', 'twentyseventeen') . '</span><span aria-hidden="true" class="nav-subtitle">' . __('Next', 'twentyseventeen') . '</span> <span class="nav-title">%title<span class="nav-title-icon-wrapper">' . twentyseventeen_get_svg(['icon' => 'arrow-right']) . '</span></span>',
-					]);
-				endwhile; // End the loop.
-				?>
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
-		<?php get_sidebar(); ?>
-	</div><!-- .wrap -->
-
+		<section class="container">
+			<?php echo get_the_content(); ?>
+		</section>
 <?php
+endwhile;
+	endif;
 get_footer();
